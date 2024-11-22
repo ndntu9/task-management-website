@@ -1,0 +1,7 @@
+.header {
+    padding-top: 31px;
+
+    @include media-screen(md) {
+        padding-top: 40px;
+    }
+}

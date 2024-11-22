@@ -1,0 +1,53 @@
+.btn-primary {
+    display: inline-block;
+    border: solid 1px var(--btn-border-color);
+    border-radius: 8px;
+    color: var(--btn-text-color);
+    font-size: 1.2rem;
+    font-weight: 600;
+    background: var(--btn-bg-color);
+    transition: 300ms;
+
+    &:hover {
+        background: var(--btn-hover-bg-color);
+    }
+
+    @include media-screen(md) {
+        font-size: 1.6rem;
+    }
+}
+
+.btn-text {
+    color: var(--primary-text-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1;
+    position: relative;
+    transition: 300ms;
+
+    &:hover {
+        color: var(--btn-text-hover-color);
+    }
+
+    &::after {
+        content: "";
+        display: inline-block;
+        width: 0;
+        height: 2px;
+        background: var(--btn-text-underline-color);
+        position: absolute;
+        bottom: -3px;
+        right: 60%;
+        transition: 300ms;
+    }
+
+    &:hover::after {
+        width: 40%;
+        left: 0;
+    }
+
+    @include media-screen(md) {
+        font-size: 1.6rem;
+        line-height: 1.5;
+    }
+}

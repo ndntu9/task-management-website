@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task Management Website</title>
+        <!-- font -->
+        <link rel="stylesheet" href="./assets/fonts/stylesheet.css" />
+        <!-- css -->
+        <link rel="stylesheet" href="./assets/css/main.css" />
+        <!-- favicon -->
+        <link rel="icon" type="image/png" href="./assets/favicon/favicon-96x96.png" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="./assets/favicon/favicon.svg" />
+        <link rel="shortcut icon" href="./assets/favicon/favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png" />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+    </head>
+    <body>
+        <!-- header -->
+        <header class="header pc-header">
+            <div class="container">
+                <nav class="navbar d-flex">
+                    <a href="#!" class="navbar__logo">
+                        <img src="./assets/icons/logo.svg" alt="" class="logo" />
+                    </a>
+                    <ul class="navbar__list d-none d-md-flex">
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link btn-text">Home</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link btn-text">Products</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link btn-text">Guidlines</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link btn-text">Review</a>
+                        </li>
+                    </ul>
+                    <div class="navbar__act d-flex">
+                        <a href="#!" class="sign-in__btn btn-primary">Sign In</a>
+                        <label for="menu-checkbox" class="navbar__more d-block d-md-none">
+                            <img src="./assets/icons/more.svg" alt="" class="more-icon" />
+                        </label>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <header class="mobile-header d-block d-md-none">
+            <input type="checkbox" class="menu-checkbox" id="menu-checkbox" hidden />
+            <label for="menu-checkbox" class="menu-overlay"></label>
+            <div class="menu-drawer">
+                <nav class="navbar d-flex">
+                    <a href="#!" class="navbar__logo">
+                        <img src="./assets/icons/logo.svg" alt="" class="logo" />
+                    </a>
+                    <ul class="navbar__list d-flex">
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link btn-text">Home</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link btn-text">Products</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link btn-text">Guidlines</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a href="#!" class="navbar__link btn-text">Review</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+    </body>
+</html>
